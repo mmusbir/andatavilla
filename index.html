@@ -1,498 +1,432 @@
 <!DOCTYPE html>
-
 <html lang="id">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Andata Villa Majene | Luxury Tropical Retreat</title>
+    <meta name="description" content="Villa, Hotel, Cafe, Meeting Room & Swimming Pool dengan pemandangan laut yang indah di pesisir Sulawesi Barat." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "primary-container": "#2c5f78",
-                        "on-error": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "surface-container-high": "#f4e6d6",
-                        "outline-variant": "#c1c7cd",
-                        "tertiary-container": "#3d6153",
-                        "tertiary-fixed": "#c4ebd9",
-                        "on-surface-variant": "#41484c",
-                        "on-tertiary-fixed-variant": "#2a4d40",
-                        "on-secondary-container": "#3c6c6e",
-                        "on-primary-container": "#a6d8f5",
-                        "secondary-fixed-dim": "#9ecfd1",
-                        "background": "#fff8f3",
-                        "on-tertiary-fixed": "#002116",
-                        "surface-container-highest": "#eee0d0",
-                        "on-primary-fixed": "#001e2c",
-                        "on-primary": "#ffffff",
-                        "surface-tint": "#32647d",
-                        "on-error-container": "#93000a",
-                        "primary-fixed": "#c2e8ff",
-                        "tertiary": "#26493c",
-                        "secondary-fixed": "#b9ecee",
-                        "secondary": "#356668",
-                        "surface-variant": "#eee0d0",
-                        "inverse-surface": "#372f25",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container": "#faecdc",
-                        "surface-bright": "#fff8f3",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed-variant": "#1a4e50",
-                        "on-background": "#211b11",
-                        "error": "#ba1a1a",
-                        "surface-container-low": "#fff2e3",
-                        "primary-fixed-dim": "#9ccdea",
-                        "tertiary-fixed-dim": "#a8cfbd",
-                        "on-surface": "#211b11",
-                        "secondary-container": "#b9ecee",
-                        "on-tertiary-container": "#b3dac8",
-                        "on-primary-fixed-variant": "#144c64",
-                        "outline": "#71787d",
-                        "surface": "#fff8f3",
-                        "error-container": "#ffdad6",
-                        "surface-dim": "#e6d8c8",
+                    colors: {
                         "primary": "#0c475f",
-                        "inverse-on-surface": "#fdefde",
-                        "on-secondary-fixed": "#002021",
-                        "inverse-primary": "#9ccdea"
+                        "primary-container": "#2c5f78",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#a6d8f5",
+                        "secondary": "#356668",
+                        "secondary-container": "#b9ecee",
+                        "tertiary": "#26493c",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fff8f3",
+                        "surface": "#fff8f3",
+                        "surface-container": "#faecdc",
+                        "surface-container-low": "#fff2e3",
+                        "surface-container-high": "#f4e6d6",
+                        "surface-container-highest": "#eee0d0",
+                        "on-background": "#211b11",
+                        "on-surface": "#211b11",
+                        "on-surface-variant": "#41484c",
+                        "outline": "#71787d",
+                        "outline-variant": "#c1c7cd",
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
+                    fontFamily: {
+                        "sans": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
                     },
-                    "spacing": {
-                        "unit": "8px",
-                        "gutter": "24px",
-                        "section-gap": "80px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "64px"
-                    },
-                    "fontFamily": {
-                        "body-lg": ["Manrope"],
-                        "headline-lg": ["Playfair Display"],
-                        "headline-lg-mobile": ["Playfair Display"],
-                        "body-md": ["Manrope"],
-                        "label-lg": ["Manrope"],
-                        "headline-md": ["Playfair Display"],
-                        "headline-xl": ["Playfair Display"]
-                    },
-                    "fontSize": {
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-                    }
-                },
-            },
+                }
+            }
         }
     </script>
     <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
         .hero-gradient {
-            background: linear-gradient(to bottom, rgba(12, 71, 95, 0.4), rgba(12, 71, 95, 0.2));
+            background: linear-gradient(to bottom, rgba(12, 71, 95, 0.55) 0%, rgba(12, 71, 95, 0.15) 100%);
         }
-
         .glass-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(10px);
+        }
+        /* Hamburger menu */
+        #mobile-menu { display: none; }
+        #mobile-menu.open { display: flex; }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Section spacing standardized */
+        .section-py { padding-top: 56px; padding-bottom: 56px; }
+        @media (min-width: 768px) {
+            .section-py { padding-top: 80px; padding-bottom: 80px; }
         }
     </style>
 </head>
 
-<body class="bg-background text-on-background font-body-md overflow-x-hidden">
-    <!-- TopNavBar -->
-    <header
-        class="bg-background/80 dark:bg-background/80 docked full-width top-0 sticky backdrop-blur-md border-b border-outline-variant/10 shadow-sm z-50">
-        <nav
-            class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
-            <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed italic font-bold">Andata
-                Villa</div>
-            <div class="hidden md:flex items-center gap-8 font-label-lg text-label-lg uppercase tracking-wider">
-                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
-                    href="#rooms">Rooms</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
-                    href="#pool">Pool</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
-                    href="#cafe">Cafe</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
-                    href="#contact">Contact</a>
+<body class="bg-[#fff8f3] text-[#211b11] overflow-x-hidden">
+
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="bg-[#fff8f3]/90 backdrop-blur-md sticky top-0 z-50 border-b border-[#c1c7cd]/20 shadow-sm">
+        <nav class="flex justify-between items-center w-full px-4 md:px-12 py-3 max-w-7xl mx-auto">
+            <!-- Logo -->
+            <a href="#" class="font-serif text-xl font-bold text-[#0c475f] italic leading-none">Andata<br class="hidden sm:block" /><span class="not-italic font-normal text-base text-[#41484c] sm:ml-1">Villa</span></a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold uppercase tracking-widest">
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#rooms">Rooms</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#pool">Pool</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#cafe">Cafe</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#contact">Contact</a>
             </div>
-            <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F"
-                target="_blank"
-                class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg uppercase tracking-wider hover:opacity-90 active:scale-95 transition-all shadow-md inline-block">
-                Book Now
-            </a>
+
+            <div class="flex items-center gap-3">
+                <!-- Book Now -->
+                <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F"
+                    target="_blank"
+                    class="bg-[#0c475f] text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:opacity-90 active:scale-95 transition-all shadow-md">
+                    Book Now
+                </a>
+                <!-- Hamburger -->
+                <button id="hamburger-btn" class="md:hidden flex flex-col gap-1.5 p-1 cursor-pointer" aria-label="Menu">
+                    <span class="block w-5 h-0.5 bg-[#41484c]"></span>
+                    <span class="block w-5 h-0.5 bg-[#41484c]"></span>
+                    <span class="block w-5 h-0.5 bg-[#41484c]"></span>
+                </button>
+            </div>
         </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="bg-cover bg-center w-full h-full scale-105 animate-pulse-slow"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiMVTNANQ5iF11iEetKc01SF8O_FSzlx2brvyGEMkn-h23v5iWFrx2K3QnykbaFvqsHOOi163anHJLlx1d3hNokSqsuR5USihs0bpmSkGhkB24L8U4j36KU3zTLQFFksQ_VaAlXeUb4JKmIfvcTgGGt2O42ErcsziT9i4QMLqL2xek4s2bQ6vEYm2QAMgREtLuzbnBVzz0Ogg3fMfbsH1GgiXFZheM8gTIdeGQGEI5AJOh2lFHDrkTDkNhWy6HuyXJWPo')">
-            </div>
-            <div class="absolute inset-0 hero-gradient"></div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="flex-col gap-0 border-t border-[#c1c7cd]/20 md:hidden">
+            <a href="#rooms" class="px-6 py-3 text-sm font-semibold uppercase tracking-widest text-[#41484c] hover:bg-[#faecdc] transition-colors block">Rooms</a>
+            <a href="#pool" class="px-6 py-3 text-sm font-semibold uppercase tracking-widest text-[#41484c] hover:bg-[#faecdc] transition-colors block">Pool</a>
+            <a href="#cafe" class="px-6 py-3 text-sm font-semibold uppercase tracking-widest text-[#41484c] hover:bg-[#faecdc] transition-colors block">Cafe</a>
+            <a href="#contact" class="px-6 py-3 text-sm font-semibold uppercase tracking-widest text-[#41484c] hover:bg-[#faecdc] transition-colors block">Contact</a>
         </div>
-        <div class="relative z-10 text-center px-margin-mobile max-w-4xl">
-            <h1 class="font-headline-xl text-headline-xl text-white mb-6 drop-shadow-lg leading-tight">
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="relative h-[80vh] min-h-[480px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-cover bg-center"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiMVTNANQ5iF11iEetKc01SF8O_FSzlx2brvyGEMkn-h23v5iWFrx2K3QnykbaFvqsHOOi163anHJLlx1d3hNokSqsuR5USihs0bpmSkGhkB24L8U4j36KU3zTLQFFksQ_VaAlXeUb4JKmIfvcTgGGt2O42ErcsziT9i4QMLqL2xek4s2bQ6vEYm2QAMgREtLuzbnBVzz0Ogg3fMfbsH1GgiXFZheM8gTIdeGQGEI5AJOh2lFHDrkTDkNhWy6HuyXJWPo');">
+        </div>
+        <div class="absolute inset-0 hero-gradient z-[1]"></div>
+        <div class="relative z-10 text-center px-5 max-w-3xl mx-auto">
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
                 Pengalaman Menginap Tak Terlupakan di Majene
             </h1>
-            <p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-md">
-                Villa, Hotel, Cafe, Meeting room &amp; Swimmingpool dengan pemandangan laut yang indah di pesisir
-                Sulawesi Barat.
+            <p class="text-white/90 text-base sm:text-lg mb-8 max-w-xl mx-auto drop-shadow-md">
+                Villa, Hotel, Cafe, Meeting Room &amp; Swimming Pool dengan pemandangan laut di pesisir Sulawesi Barat.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a class="bg-white text-primary px-8 py-4 rounded-xl font-label-lg text-label-lg uppercase transition-all hover:shadow-xl hover:-translate-y-1"
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a class="bg-white text-[#0c475f] px-7 py-3 rounded-xl text-sm font-bold uppercase tracking-wider transition-all hover:shadow-xl hover:-translate-y-0.5"
                     href="#rooms">Lihat Kamar</a>
-                <a class="bg-primary/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-label-lg text-label-lg uppercase transition-all hover:bg-white/10"
+                <a class="bg-white/20 backdrop-blur-sm border border-white/40 text-white px-7 py-3 rounded-xl text-sm font-bold uppercase tracking-wider transition-all hover:bg-white/30"
                     href="#pool">Fasilitas Kolam</a>
             </div>
         </div>
     </section>
-    <!-- Room Showcase -->
-    <section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="rooms">
-        <div class="text-center mb-16">
-            <span class="text-primary font-label-lg tracking-[0.2em] uppercase">Accommodations</span>
-            <h2 class="font-headline-lg text-headline-lg mt-2">Pilihan Kamar Terbaik</h2>
-            <div class="h-1 w-20 bg-primary mx-auto mt-4 rounded-full"></div>
+
+    <!-- ═══ ROOMS ═══ -->
+    <section class="section-py max-w-7xl mx-auto px-4 md:px-12" id="rooms">
+        <div class="text-center mb-10">
+            <span class="text-[#0c475f] text-xs font-bold tracking-[0.25em] uppercase">Accommodations</span>
+            <h2 class="font-serif text-2xl md:text-3xl font-semibold mt-1">Pilihan Kamar Terbaik</h2>
+            <div class="h-0.5 w-14 bg-[#0c475f] mx-auto mt-3 rounded-full"></div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
             <!-- Kamar VIP -->
-            <div
-                class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-                <div class="relative h-64 overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN3TpBjivs17o8sR3tGQNA3fILG8LnsSPGpGZkMqKzEKttjJdK69SFLt8Etg75TU5ZsNJvZyLH4EUWHiPjXmQh_iHmqHirQ5155ks9KZ-WR9bYAHptdJYD1z_XINXw5XM3rkdx0Yoc474-lmmA-c8hD8rU_PsXYF3GFAdp_YmRHTKtMhlXiuNQPvwBdRjfQYdAisIZT59_er7pfaC8aXYKFu3m6Een1C0tp-scoPX2MNt4ORP49iNNF2B-c1cho0Im_9g" />
-                    <div
-                        class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-                        Popular</div>
+            <div class="group bg-[#fff2e3] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-400 border border-[#c1c7cd]/15 flex flex-col">
+                <div class="relative h-48 overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN3TpBjivs17o8sR3tGQNA3fILG8LnsSPGpGZkMqKzEKttjJdK69SFLt8Etg75TU5ZsNJvZyLH4EUWHiPjXmQh_iHmqHirQ5155ks9KZ-WR9bYAHptdJYD1z_XINXw5XM3rkdx0Yoc474-lmmA-c8hD8rU_PsXYF3GFAdp_YmRHTKtMhlXiuNQPvwBdRjfQYdAisIZT59_er7pfaC8aXYKFu3m6Een1C0tp-scoPX2MNt4ORP49iNNF2B-c1cho0Im_9g"
+                        alt="Kamar VIP" loading="lazy" />
+                    <div class="absolute top-3 left-3 bg-[#0c475f] text-white px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">Popular</div>
                 </div>
-                <div class="p-6">
-                    <h3 class="font-headline-md text-headline-md mb-2">Kamar VIP</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">King
-                            Bed</span>
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Ocean
-                            View</span>
+                <div class="p-4 flex flex-col flex-1">
+                    <h3 class="font-serif text-lg font-semibold mb-1.5">Kamar VIP</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">King Bed</span>
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Ocean View</span>
                     </div>
-                    <p class="text-on-surface-variant font-body-md mb-6">Kamar luas eksklusif dengan balkon pribadi
-                        menghadap laut dan kolam.</p>
-                    <div class="flex items-end justify-between">
+                    <p class="text-[#41484c] text-sm mb-4 flex-1">Kamar luas eksklusif dengan balkon pribadi menghadap laut dan kolam.</p>
+                    <div class="flex items-center justify-between pt-3 border-t border-[#c1c7cd]/20">
                         <div>
-                            <span class="text-primary font-bold text-xl">Rp 650.000</span>
-                            <span class="text-on-surface-variant text-sm">/ Malam</span>
+                            <span class="text-[#0c475f] font-bold text-base">Rp 650.000</span>
+                            <span class="text-[#41484c] text-xs ml-1">/ Malam</span>
                         </div>
-                        <button
-                            class="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_circle_right</button>
+                        <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                            class="material-symbols-outlined text-[#0c475f] hover:scale-110 transition-transform text-2xl">arrow_circle_right</a>
                     </div>
                 </div>
             </div>
+
             <!-- Kamar Superior -->
-            <div
-                class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-                <div class="relative h-64 overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpU8lxkhjXfwl1I2mQ5z9Fm9uwwfoqZ7iWYVMARvEW0wDD_7QEn6MCz_23DP5P5hUAvJASLFWKRONysi1zei6RJoPS-_wRhuU3StBEKibBEHxwpUvRHKABMlmzLqmSNSRIGAtdQ2YoVni-CM_xKhVEZJk5Amru5OHBoJ_Lf2R9gToo08FqexTsU0TyPhr6ykDmhNTVLdXWSEaFkhSHjJdJxxdIrPu_5OEnm89mGbAGe0TX37lR_KTy7pks8F_791Tjx0" />
+            <div class="group bg-[#fff2e3] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-400 border border-[#c1c7cd]/15 flex flex-col">
+                <div class="relative h-48 overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpU8lxkhjXfwl1I2mQ5z9Fm9uwwfoqZ7iWYVMARvEW0wDD_7QEn6MCz_23DP5P5hUAvJASLFWKRONysi1zei6RJoPS-_wRhuU3StBEKibBEHxwpUvRHKABMlmzLqmSNSRIGAtdQ2YoVni-CM_xKhVEZJk5Amru5OHBoJ_Lf2R9gToo08FqexTsU0TyPhr6ykDmhNTVLdXWSEaFkhSHjJdJxxdIrPu_5OEnm89mGbAGe0TX37lR_KTy7pks8F_791Tjx0"
+                        alt="Kamar Superior" loading="lazy" />
                 </div>
-                <div class="p-6">
-                    <h3 class="font-headline-md text-headline-md mb-2">Kamar Superior</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Twin
-                            Bed</span>
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Full
-                            Amenities</span>
+                <div class="p-4 flex flex-col flex-1">
+                    <h3 class="font-serif text-lg font-semibold mb-1.5">Kamar Superior</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Twin Bed</span>
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Full Amenities</span>
                     </div>
-                    <p class="text-on-surface-variant font-body-md mb-6">Kenyamanan modern dengan fasilitas lengkap dan
-                        pemandangan area asri.</p>
-                    <div class="flex items-end justify-between">
+                    <p class="text-[#41484c] text-sm mb-4 flex-1">Kenyamanan modern dengan fasilitas lengkap dan pemandangan area asri.</p>
+                    <div class="flex items-center justify-between pt-3 border-t border-[#c1c7cd]/20">
                         <div>
-                            <span class="text-primary font-bold text-xl">Rp 400.000</span>
-                            <span class="text-on-surface-variant text-sm">/ Malam</span>
+                            <span class="text-[#0c475f] font-bold text-base">Rp 400.000</span>
+                            <span class="text-[#41484c] text-xs ml-1">/ Malam</span>
                         </div>
-                        <button
-                            class="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_circle_right</button>
+                        <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                            class="material-symbols-outlined text-[#0c475f] hover:scale-110 transition-transform text-2xl">arrow_circle_right</a>
                     </div>
                 </div>
             </div>
+
             <!-- Kamar Triple Bed -->
-            <div
-                class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-                <div class="relative h-64 overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrga3ZY88hl-anHXE5aQxi0K4CWDXX9k4AOVPf1HbAleayRYK3LUK5UeI7m9ohTC8PesaLuTz2VxhKPKDywLWMCEl2cCJZv0X_d4WpfA0ntcZ-WMa1Jq7bwvhB72fH2CT3YT1hmuNPbsDIcjVBQT3Dj-hwAVDKKR_kxUJ0xRwQ2kfiNO2q-TucA0qWjFd5jiIos6c6qJXv4ksnOaerG8oNXOTIIsf7tJRCkXpl1sXFZIvcRPUqGeDbY685LJXqoo_Owog" />
+            <div class="group bg-[#fff2e3] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-400 border border-[#c1c7cd]/15 flex flex-col">
+                <div class="relative h-48 overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrga3ZY88hl-anHXE5aQxi0K4CWDXX9k4AOVPf1HbAleayRYK3LUK5UeI7m9ohTC8PesaLuTz2VxhKPKDywLWMCEl2cCJZv0X_d4WpfA0ntcZ-WMa1Jq7bwvhB72fH2CT3YT1hmuNPbsDIcjVBQT3Dj-hwAVDKKR_kxUJ0xRwQ2kfiNO2q-TucA0qWjFd5jiIos6c6qJXv4ksnOaerG8oNXOTIIsf7tJRCkXpl1sXFZIvcRPUqGeDbY685LJXqoo_Owog"
+                        alt="Triple Bed" loading="lazy" />
                 </div>
-                <div class="p-6">
-                    <h3 class="font-headline-md text-headline-md mb-2">Triple Bed</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">3 Single
-                            Beds</span>
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Incl.
-                            Breakfast</span>
+                <div class="p-4 flex flex-col flex-1">
+                    <h3 class="font-serif text-lg font-semibold mb-1.5">Triple Bed</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">3 Single Beds</span>
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Incl. Breakfast</span>
                     </div>
-                    <p class="text-on-surface-variant font-body-md mb-6">Ideal untuk perjalanan keluarga atau grup kecil
-                        dengan sarapan lengkap.</p>
-                    <div class="flex items-end justify-between">
+                    <p class="text-[#41484c] text-sm mb-4 flex-1">Ideal untuk perjalanan keluarga atau grup kecil dengan sarapan lengkap.</p>
+                    <div class="flex items-center justify-between pt-3 border-t border-[#c1c7cd]/20">
                         <div>
-                            <span class="text-primary font-bold text-xl">Rp 400.000</span>
-                            <span class="text-on-surface-variant text-sm">/ Malam</span>
+                            <span class="text-[#0c475f] font-bold text-base">Rp 400.000</span>
+                            <span class="text-[#41484c] text-xs ml-1">/ Malam</span>
                         </div>
-                        <button
-                            class="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_circle_right</button>
+                        <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                            class="material-symbols-outlined text-[#0c475f] hover:scale-110 transition-transform text-2xl">arrow_circle_right</a>
                     </div>
                 </div>
             </div>
-            <!-- Kamar Standart -->
-            <div
-                class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-                <div class="relative h-64 overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY8E0nluMcOYpKM3I-2fgqs7UgdS3spao_xPqPuzmDST6olvvFQSu4LWhemCv3T0h0hMe5tBcTDLcR59VrJ9RZ4_GUkUatyfFaROFstWOl0gU6cY5B2PrvPEUik-z6utDjHQYwVDEASXj2OnQXt6sxl6Rwe94yRuU5sA1ij0Z-WM6w2hTzlcc-ATHy0ZUN2PqzWUovAnmLiuMVrfcvRSyVmxBEgNTt8SKyJ8gJ04DpHnTdmH6a612ahEdT1IDglLtrne4" />
+
+            <!-- Kamar Standard -->
+            <div class="group bg-[#fff2e3] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-400 border border-[#c1c7cd]/15 flex flex-col">
+                <div class="relative h-48 overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY8E0nluMcOYpKM3I-2fgqs7UgdS3spao_xPqPuzmDST6olvvFQSu4LWhemCv3T0h0hMe5tBcTDLcR59VrJ9RZ4_GUkUatyfFaROFstWOl0gU6cY5B2PrvPEUik-z6utDjHQYwVDEASXj2OnQXt6sxl6Rwe94yRuU5sA1ij0Z-WM6w2hTzlcc-ATHy0ZUN2PqzWUovAnmLiuMVrfcvRSyVmxBEgNTt8SKyJ8gJ04DpHnTdmH6a612ahEdT1IDglLtrne4"
+                        alt="Standard" loading="lazy" />
                 </div>
-                <div class="p-6">
-                    <h3 class="font-headline-md text-headline-md mb-2">Standard</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Luxury
-                            Bed</span>
-                        <span class="bg-tertiary/10 text-tertiary px-2 py-1 rounded-lg text-xs font-semibold">Pool
-                            View</span>
+                <div class="p-4 flex flex-col flex-1">
+                    <h3 class="font-serif text-lg font-semibold mb-1.5">Standard</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Luxury Bed</span>
+                        <span class="bg-[#26493c]/10 text-[#26493c] px-2 py-0.5 rounded-md text-[10px] font-semibold">Pool View</span>
                     </div>
-                    <p class="text-on-surface-variant font-body-md mb-6">Pilihan ekonomis yang tetap mewah dengan akses
-                        mudah ke area kolam renang.</p>
-                    <div class="flex items-end justify-between">
+                    <p class="text-[#41484c] text-sm mb-4 flex-1">Pilihan ekonomis yang tetap mewah dengan akses mudah ke area kolam renang.</p>
+                    <div class="flex items-center justify-between pt-3 border-t border-[#c1c7cd]/20">
                         <div>
-                            <span class="text-primary font-bold text-xl">Rp 350.000</span>
-                            <span class="text-on-surface-variant text-sm">/ Malam</span>
+                            <span class="text-[#0c475f] font-bold text-base">Rp 350.000</span>
+                            <span class="text-[#41484c] text-xs ml-1">/ Malam</span>
                         </div>
-                        <button
-                            class="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_circle_right</button>
+                        <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                            class="material-symbols-outlined text-[#0c475f] hover:scale-110 transition-transform text-2xl">arrow_circle_right</a>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
-    <!-- Facilities Section -->
-    <section class="bg-surface-container py-section-gap" id="pool">
-        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="flex flex-col lg:flex-row gap-gutter items-center">
+
+    <!-- ═══ POOL ═══ -->
+    <section class="section-py bg-[#faecdc]" id="pool">
+        <div class="max-w-7xl mx-auto px-4 md:px-12">
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <!-- Image -->
                 <div class="w-full lg:w-1/2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl">
                         <img class="w-full aspect-video object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrF_fRQJUgpMb_efVYPybP1rKor8o-xblF8gjkvY-rceSkOyDKNgxlPdh9G6HWdlWUsq3OrMnCl6FQkrM4D5WMjZTUsdelLlo7u1rUmWza8KGpWlmhUW4vVLYP8HrUEHd77JJGyNe5hVu-RoyayA4zaghEcZlCULJvgPvDAAdZBRrxsNMAfFt3G-RcUJjf_6mkxCKPNoEoZ2k1Q7msvkS5JsdqR0_mo3YE6hjtcL2ZHMOSo9UMmxokqthqIhlvp5t8EcQ" />
-                        <div
-                            class="absolute bottom-6 left-6 glass-card p-4 rounded-xl shadow-lg border border-white/20">
-                            <div class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary text-3xl">pool</span>
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrF_fRQJUgpMb_efVYPybP1rKor8o-xblF8gjkvY-rceSkOyDKNgxlPdh9G6HWdlWUsq3OrMnCl6FQkrM4D5WMjZTUsdelLlo7u1rUmWza8KGpWlmhUW4vVLYP8HrUEHd77JJGyNe5hVu-RoyayA4zaghEcZlCULJvgPvDAAdZBRrxsNMAfFt3G-RcUJjf_6mkxCKPNoEoZ2k1Q7msvkS5JsdqR0_mo3YE6hjtcL2ZHMOSo9UMmxokqthqIhlvp5t8EcQ"
+                            alt="Swimming Pool" loading="lazy" />
+                        <div class="absolute bottom-4 left-4 glass-card p-3 rounded-xl shadow-md border border-white/20">
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-[#0c475f] text-2xl">pool</span>
                                 <div>
-                                    <p class="text-xs uppercase tracking-widest text-on-surface-variant">Entrance Fee
-                                    </p>
-                                    <p class="font-bold text-primary text-lg">Start from 20k</p>
+                                    <p class="text-[10px] uppercase tracking-widest text-[#41484c]">Entrance Fee</p>
+                                    <p class="font-bold text-[#0c475f] text-sm">Start from 20k</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-1/2 space-y-8">
+                <!-- Text -->
+                <div class="w-full lg:w-1/2 space-y-5">
                     <div>
-                        <span class="text-primary font-label-lg tracking-[0.2em] uppercase">Premium Facility</span>
-                        <h2 class="font-headline-lg text-headline-lg mt-2">Infinity Pool &amp; Tropical Garden</h2>
-                        <p class="mt-4 text-on-surface-variant font-body-md">Nikmati kesegaran air kolam renang kami
-                            yang menghadap langsung ke panorama laut lepas dan hutan mangrove yang rimbun.</p>
+                        <span class="text-[#0c475f] text-xs font-bold tracking-[0.25em] uppercase">Premium Facility</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-semibold mt-1">Infinity Pool &amp; Tropical Garden</h2>
+                        <p class="mt-3 text-[#41484c] text-sm leading-relaxed">Nikmati kesegaran kolam renang kami yang menghadap langsung ke panorama laut lepas dan hutan mangrove yang rimbun.</p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-background p-6 rounded-xl border border-outline-variant/10 shadow-sm">
-                            <h4 class="font-bold text-primary mb-2 uppercase text-xs tracking-wider">Weekday Rates</h4>
-                            <div class="flex justify-between items-center py-1">
-                                <span>Dewasa</span>
-                                <span class="font-bold">20k</span>
-                            </div>
-                            <div class="flex justify-between items-center py-1">
-                                <span>Anak-anak</span>
-                                <span class="font-bold">10k</span>
-                            </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-[#fff8f3] p-4 rounded-xl border border-[#c1c7cd]/15 shadow-sm">
+                            <h4 class="font-bold text-[#0c475f] mb-2 uppercase text-[10px] tracking-wider">Weekday</h4>
+                            <div class="flex justify-between items-center py-0.5 text-sm"><span>Dewasa</span><span class="font-bold">20k</span></div>
+                            <div class="flex justify-between items-center py-0.5 text-sm"><span>Anak-anak</span><span class="font-bold">10k</span></div>
                         </div>
-                        <div class="bg-background p-6 rounded-xl border border-outline-variant/10 shadow-sm">
-                            <h4 class="font-bold text-primary mb-2 uppercase text-xs tracking-wider">Weekend Rates</h4>
-                            <div class="flex justify-between items-center py-1">
-                                <span>Dewasa</span>
-                                <span class="font-bold">25k</span>
-                            </div>
-                            <div class="flex justify-between items-center py-1">
-                                <span>Anak-anak</span>
-                                <span class="font-bold">10k</span>
-                            </div>
+                        <div class="bg-[#fff8f3] p-4 rounded-xl border border-[#c1c7cd]/15 shadow-sm">
+                            <h4 class="font-bold text-[#0c475f] mb-2 uppercase text-[10px] tracking-wider">Weekend</h4>
+                            <div class="flex justify-between items-center py-0.5 text-sm"><span>Dewasa</span><span class="font-bold">25k</span></div>
+                            <div class="flex justify-between items-center py-0.5 text-sm"><span>Anak-anak</span><span class="font-bold">10k</span></div>
                         </div>
                     </div>
-                    <div
-                        class="bg-surface-container-highest p-6 rounded-xl border-l-4 border-primary italic text-on-surface-variant text-sm space-y-2">
-                        <p class="flex gap-2"><span class="material-symbols-outlined text-primary scale-75">info</span>
-                            Dilarang membawa makanan dan minuman dari luar area villa.</p>
-                        <p class="flex gap-2"><span
-                                class="material-symbols-outlined text-primary scale-75">verified_user</span> Anak-anak
-                            wajib didampingi orang dewasa sepanjang waktu.</p>
+                    <div class="bg-[#eee0d0] p-4 rounded-xl border-l-4 border-[#0c475f] text-[#41484c] text-xs space-y-1.5">
+                        <p class="flex items-start gap-2"><span class="material-symbols-outlined text-[#0c475f] text-base mt-0.5">info</span>Dilarang membawa makanan dan minuman dari luar area villa.</p>
+                        <p class="flex items-start gap-2"><span class="material-symbols-outlined text-[#0c475f] text-base mt-0.5">verified_user</span>Anak-anak wajib didampingi orang dewasa sepanjang waktu.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Additional Facilities Bento -->
-    <section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="cafe">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-            <div
-                class="md:col-span-2 bg-primary-container text-white p-12 rounded-3xl relative overflow-hidden flex flex-col justify-end min-h-[400px] bg-cover bg-center"
-                style="background-image: linear-gradient(to right, rgba(12, 71, 95, 0.95), rgba(12, 71, 95, 0.2)), url('assets/cafe.jpg');">
-                <div class="absolute top-0 right-0 p-8 z-10">
-                    <span class="material-symbols-outlined text-6xl opacity-30">restaurant</span>
+
+    <!-- ═══ CAFE & MEETING ═══ -->
+    <section class="section-py max-w-7xl mx-auto px-4 md:px-12" id="cafe">
+        <div class="text-center mb-10">
+            <span class="text-[#0c475f] text-xs font-bold tracking-[0.25em] uppercase">Our Venues</span>
+            <h2 class="font-serif text-2xl md:text-3xl font-semibold mt-1">Cafe &amp; Meeting Room</h2>
+            <div class="h-0.5 w-14 bg-[#0c475f] mx-auto mt-3 rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Cafe Card -->
+            <div class="md:col-span-2 text-white p-8 rounded-2xl relative overflow-hidden flex flex-col justify-end min-h-[320px] bg-cover bg-center"
+                style="background-image: linear-gradient(to right, rgba(12,71,95,0.95) 0%, rgba(12,71,95,0.5) 60%, rgba(12,71,95,0.15) 100%), url('assets/cafe.jpg'), linear-gradient(135deg, #2c5f78, #0c475f);">
+                <div class="absolute top-6 right-6 z-10">
+                    <span class="material-symbols-outlined text-5xl opacity-25">restaurant</span>
                 </div>
                 <div class="relative z-10">
-                    <h3 class="font-headline-lg text-headline-lg mb-4 italic">Andata Cafe</h3>
-                    <p class="text-white/90 max-w-md mb-8">Nikmati sajian lokal dan internasional dengan hembusan angin
-                        laut Majene yang menyejukkan di cafe tepi tebing kami.</p>
-                    <button
-                        class="border border-white/40 px-6 py-2 rounded-full hover:bg-white hover:text-primary transition-all uppercase text-xs tracking-widest font-bold">Lihat
-                        Menu</button>
+                    <h3 class="font-serif text-2xl font-semibold mb-2 italic">Andata Cafe</h3>
+                    <p class="text-white/85 text-sm max-w-sm mb-5 leading-relaxed">Nikmati sajian lokal dan internasional dengan hembusan angin laut Majene yang menyejukkan di cafe tepi tebing kami.</p>
+                    <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                        class="inline-block border border-white/50 px-5 py-2 rounded-full hover:bg-white hover:text-[#0c475f] transition-all text-xs tracking-widest font-bold uppercase">
+                        Tanya Admin
+                    </a>
                 </div>
             </div>
-            <div class="bg-secondary-container p-12 rounded-3xl flex flex-col justify-end min-h-[400px]">
-                <div class="mb-auto">
-                    <span class="material-symbols-outlined text-primary text-5xl">groups</span>
+            <!-- Meeting Card -->
+            <div class="bg-[#b9ecee] p-8 rounded-2xl flex flex-col justify-between min-h-[320px]">
+                <div>
+                    <span class="material-symbols-outlined text-[#0c475f] text-4xl">groups</span>
                 </div>
-                <h3 class="font-headline-md text-headline-md mb-4 text-primary">Meeting Rooms</h3>
-                <p class="text-on-surface-variant text-sm mb-6">Ruang pertemuan profesional dengan fasilitas
-                    audio-visual lengkap untuk produktivitas maksimal.</p>
-                <div
-                    class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest cursor-pointer group">
-                    Book Space <span
-                        class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                <div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-[#0c475f]">Meeting Rooms</h3>
+                    <p class="text-[#41484c] text-sm mb-5 leading-relaxed">Ruang pertemuan profesional dengan fasilitas audio-visual lengkap untuk produktivitas maksimal.</p>
+                    <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F" target="_blank"
+                        class="inline-flex items-center gap-1 text-[#0c475f] font-bold text-xs uppercase tracking-widest group">
+                        Book Space
+                        <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Location & Contact -->
-    <section class="bg-background py-section-gap" id="contact">
-        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="bg-surface-container rounded-[2rem] overflow-hidden shadow-xl flex flex-col lg:flex-row">
-                <div class="w-full lg:w-1/2 h-[450px] bg-outline-variant/20 relative">
-                    <!-- Virtual Map Placeholder -->
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section-py bg-[#fff8f3]" id="contact">
+        <div class="max-w-7xl mx-auto px-4 md:px-12">
+            <div class="bg-[#faecdc] rounded-2xl overflow-hidden shadow-lg flex flex-col lg:flex-row">
+                <!-- Map -->
+                <div class="w-full lg:w-1/2 h-72 lg:h-auto relative min-h-[280px]">
                     <div class="w-full h-full bg-cover bg-center"
-                        data-alt="A stylized minimalist map illustration showing the coastline of Majene, Sulawesi Barat, with a elegant pin marking the location of Andata Villa near the mangrove forest. The map uses a soft palette of sea blue, sandy beige, and forest green to match the villa branding."
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2KlDuOK5rKFqDpqNXFHSKN7ed2U4m8b2xCY6Osfb8Oy0DRRBVi6PKpO5VarP4JOqJQ2znPB4xIVo1L6Fhh-WRn432ND_sZwbVzB3-wDcAqD698gwlW-l9CIMLvI17XWEhrGDuGJcvOP4jsizVrORdI9KKXjZx2fojtBoNA9BRliY2KmxeU2BwN4pWYGTR0Ez8iMYCl9RcbbXZn9LppiL3eD6cGdYq9CRmSunam7hXObuMtABy4QloJA')">
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2KlDuOK5rKFqDpqNXFHSKN7ed2U4m8b2xCY6Osfb8Oy0DRRBVi6PKpO5VarP4JOqJQ2znPB4xIVo1L6Fhh-WRn432ND_sZwbVzB3-wDcAqD698gwlW-l9CIMLvI17XWEhrGDuGJcvOP4jsizVrORdI9KKXjZx2fojtBoNA9BRliY2KmxeU2BwN4pWYGTR0Ez8iMYCl9RcbbXZn9LppiL3eD6cGdYq9CRmSunam7hXObuMtABy4QloJA');">
                     </div>
-                    <div
-                        class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg flex items-center gap-4 border border-outline-variant/10">
-                        <div class="bg-primary p-2 rounded-lg"><span
-                                class="material-symbols-outlined text-white">location_on</span></div>
-                        <span class="text-sm font-bold">Jl. Huriyah Dato, Majene</span>
+                    <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-md flex items-center gap-3 border border-[#c1c7cd]/15">
+                        <div class="bg-[#0c475f] p-1.5 rounded-lg"><span class="material-symbols-outlined text-white text-base">location_on</span></div>
+                        <span class="text-sm font-semibold">Jl. Huriyah Dato, Majene</span>
                     </div>
                 </div>
-                <div class="w-full lg:w-1/2 p-12 flex flex-col justify-center">
-                    <h2 class="font-headline-lg text-headline-lg mb-8">Hubungi Kami</h2>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-primary">call</span>
+                <!-- Info -->
+                <div class="w-full lg:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+                    <h2 class="font-serif text-2xl md:text-3xl font-semibold mb-6">Hubungi Kami</h2>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-[#0c475f] text-xl">call</span>
                             <div>
-                                <p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Telepon /
-                                    WhatsApp</p>
-                                <p class="text-xl font-bold text-primary">0813 547 8910</p>
+                                <p class="text-[10px] uppercase tracking-widest text-[#41484c] font-semibold">Telepon / WhatsApp</p>
+                                <p class="text-lg font-bold text-[#0c475f]">0813 547 8910</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-primary">share</span>
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-[#0c475f] text-xl">camera_alt</span>
                             <div>
-                                <p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Instagram
-                                </p>
-                                <p class="text-xl font-bold text-primary">@andatavilla</p>
+                                <p class="text-[10px] uppercase tracking-widest text-[#41484c] font-semibold">Instagram</p>
+                                <p class="text-lg font-bold text-[#0c475f]">@andatavilla</p>
                             </div>
-                        </div>
-                        <div class="pt-8 border-t border-outline-variant/20">
-                            <p class="text-on-surface-variant italic mb-6">Kami siap menyambut kedatangan Anda untuk
-                                pengalaman liburan atau keperluan bisnis yang berkesan di Majene.</p>
-                            <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F"
-                                target="_blank"
-                                class="w-full block text-center bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest hover:shadow-lg transition-all active:scale-[0.98]">Kirim
-                                Pesan Sekarang</a>
                         </div>
                     </div>
+                    <p class="text-[#41484c] text-sm italic mb-5 border-t border-[#c1c7cd]/25 pt-5">
+                        Kami siap menyambut kedatangan Anda untuk pengalaman liburan atau keperluan bisnis yang berkesan di Majene.
+                    </p>
+                    <a href="https://wa.me/628135478910?text=Halo%20Admin%2C%20Mohon%20informasi%20kamar%20yang%20tersedia%3F"
+                        target="_blank"
+                        class="w-full block text-center bg-[#0c475f] text-white py-3.5 rounded-xl text-sm font-bold uppercase tracking-widest hover:shadow-lg hover:opacity-95 transition-all active:scale-[0.98]">
+                        Kirim Pesan Sekarang
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer
-        class="bg-surface-container dark:bg-surface-container-highest rounded-t-[2rem] border-t border-outline-variant/10">
-        <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-unit p-margin-mobile md:p-margin-desktop mt-section-gap w-full max-w-7xl mx-auto">
-            <div class="space-y-4">
-                <div class="font-headline-md text-headline-md text-primary italic font-bold">Andata Villa</div>
-                <p class="font-body-md text-on-surface-variant max-w-xs">
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-[#faecdc] border-t border-[#c1c7cd]/20">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="space-y-3">
+                <div class="font-serif text-lg font-bold text-[#0c475f] italic">Andata Villa</div>
+                <p class="text-[#41484c] text-sm max-w-xs leading-relaxed">
                     Hunian eksklusif dengan sentuhan tropis dan pemandangan laut yang menenangkan di jantung Majene.
                 </p>
             </div>
-            <div class="flex flex-col gap-3 font-body-md">
-                <h4 class="font-bold text-primary uppercase text-xs tracking-widest mb-2">Quick Links</h4>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#rooms">Rooms &amp;
-                    Suites</a>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#pool">Swimming Pool</a>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#cafe">Cafe &amp; Meeting
-                    Room</a>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#">FAQ</a>
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="font-bold text-[#0c475f] uppercase text-[10px] tracking-widest mb-1">Quick Links</h4>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#rooms">Rooms &amp; Suites</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#pool">Swimming Pool</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#cafe">Cafe &amp; Meeting Room</a>
+                <a class="text-[#41484c] hover:text-[#0c475f] transition-colors" href="#contact">Kontak</a>
             </div>
-            <div class="flex flex-col gap-3 font-body-md">
-                <h4 class="font-bold text-primary uppercase text-xs tracking-widest mb-2">Legal</h4>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
-                <a class="text-on-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a>
-                <div class="mt-4 flex gap-4">
-                    <span class="material-symbols-outlined cursor-pointer hover:text-primary">face_nod</span>
-                    <span class="material-symbols-outlined cursor-pointer hover:text-primary">camera_alt</span>
-                    <span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
-                </div>
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="font-bold text-[#0c475f] uppercase text-[10px] tracking-widest mb-1">Ikuti Kami</h4>
+                <a href="https://wa.me/628135478910" target="_blank" class="text-[#41484c] hover:text-[#0c475f] transition-colors flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base">chat</span> WhatsApp
+                </a>
+                <a href="#" class="text-[#41484c] hover:text-[#0c475f] transition-colors flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base">camera_alt</span> Instagram
+                </a>
             </div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant text-sm">
-            <span>© 2024 Andata Villa Majene. All rights reserved.</span>
+        <div class="max-w-7xl mx-auto px-4 md:px-12 py-4 border-t border-[#c1c7cd]/20 flex flex-col sm:flex-row justify-between items-center gap-2 text-[#41484c] text-xs">
+            <span>© 2025 Andata Villa Majene. All rights reserved.</span>
             <span>Handcrafted for Excellence.</span>
         </div>
     </footer>
-    <script>
-        // Simple scroll reveal for sticky header transparency
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('shadow-lg');
-            }
-        });
 
-        // Smooth scroll implementation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+    <script>
+        // Hamburger toggle
+        const btn = document.getElementById('hamburger-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('open'));
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+        // Sticky header shadow
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('shadow-md', window.scrollY > 60);
         });
     </script>
 </body>
